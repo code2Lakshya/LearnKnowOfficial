@@ -1,0 +1,78 @@
+.hover-list-wrapper{
+    position: relative;
+}
+.hover-list-wrapper h1{
+    display: flex;
+    align-items: center;
+    gap:5px;
+    color: white;
+    transition: color 0.3s;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+.hover-list-wrapper h1 a{
+    color: inherit;
+    text-decoration: none;
+    font-size: 14px;
+    padding-block: 30px;
+}
+.hover-list-wrapper span{
+    font-size: 14px;
+    color: inherit;
+    display: flex;
+    align-items: center;
+}
+.hover-list-wrapper h1:hover{
+    color: var(--txt-color);
+}
+.hover-list{
+    display: none;
+    position: absolute;
+    top:100%;
+    left: 0;
+    list-style: none;
+    width: max-content;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: all 0.3s;
+    padding-block: 20px;
+    opacity: 0;
+}
+.hover-list.active{
+    transform: scaleY(1);
+    opacity: 1;
+}
+.hover-list li{
+    display: flex;
+    flex-direction: column;
+}
+.hover-list a{
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+    padding: 10px 20px;
+    font-size: 14px;
+    letter-spacing: 0.14rem;
+    text-transform: uppercase;
+    transform: translateX(0);
+    transition: all 0.3s;
+}
+.hover-list a:hover{
+    transform: translateX(14px);
+    color: var(--txt-color);
+}
+@media screen and (max-width: 1000px) {
+    .hover-list-wrapper h1 a{
+        padding-block: 0;
+    }
+    .hover-list-wrapper h1 span{
+        display: none;
+    }
+    .hover-list.hover-list.active{
+        display: none;
+    }
+}

@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600;700&display=swap');
+
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+}
+:root{
+  --txt-color: #ff7425;
+  --bg-color: rgb(13, 13, 13);
+}
+body{
+  font-family: 'Arimo', sans-serif;
+  background-color: rgb(13, 13, 13);
+  color: rgb(255, 255, 255);
+}
+.margin-top{
+  margin-top: 91px;
+}
+@media screen and (max-width: 1000px) {
+  .margin-top{
+    margin-top: 61px;
+  }
+}

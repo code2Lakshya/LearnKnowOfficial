@@ -1,0 +1,11 @@
+.hover-effect-container{
+    width: 100%;
+}
+.hover-effect-wrapper{
+    visibility: hidden;
+    opacity: 0;
+}
+.hover-effect-wrapper.active{
+    visibility: visible;
+    opacity: 1;
+}
