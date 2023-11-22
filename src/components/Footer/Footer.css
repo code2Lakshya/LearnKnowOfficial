@@ -1,0 +1,126 @@
+footer{
+    width: 100%;
+    background-color: #171717;
+    padding: 100px 30px 0;
+}
+.footer-wrapper{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.footer-header{
+    width: 100%;
+    padding: 20px;
+    border: 1px solid rgba(142, 139, 139,0.2);
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+.footer-header p{
+    font-size: 90px;
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.14rem;
+    word-spacing: 7px;
+}
+.footer-header p span:nth-child(1){
+    padding-inline: 30px;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-color: white;
+    -webkit-text-stroke-width: 1px;
+}
+.footer-header p span:nth-child(2) i{
+    color: var(--txt-color);
+    transform: rotate(-45deg);
+}
+.footer-content{
+    display: flex;
+    gap:40px;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.company-details .lazy-load-image-background{
+    width: 172px;
+    height: 50px;
+}
+.company-details p{
+    font-size: 15px;
+    margin: 25px 0 16px;
+    max-width: 350px;
+    color: #7d7d7d;
+    font-weight: 400;
+}
+.footer-card h3{
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 38px;
+    font-weight: 500;
+    letter-spacing: 0.14rem;
+}
+.footer-card ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap:12px;
+}
+.footer-card a{
+    text-decoration: none;
+    color: #7d7d7d;
+    font-size: 15px;
+    font-weight: 400;
+    transition: color 0.5s;
+}
+.footer-card a:hover{
+    color:var(--txt-color);
+}
+.footer-card.socials ul li{
+    display: flex;
+    align-items: center;
+}
+.footer-card.socials span{
+    margin-right: 8px;
+    display: inline-flex;
+    align-items: center;
+    color: var(--txt-color);
+}
+.footer-about{
+    font-size: 14px;
+    padding: 25px 0;
+    color: rgba(236, 232, 232, 0.7);
+    border-top: 1px solid rgba(142, 139, 139,0.2);
+}
+.footer-about span{
+    color: var(--txt-color);
+    transition: color 0.5s;
+    cursor: pointer;
+}
+.footer-about span:hover{
+    text-decoration: underline;
+    text-decoration-color: var(--txt-color);
+}
+@media screen and (max-width: 1000px) {
+    .footer-content{
+        flex-wrap: wrap;
+    }
+    .footer-header p{
+        font-size: 70px;
+    }
+}
+@media screen and (max-width: 800px) {
+    .footer-header p{
+        font-size: 50px;
+    }
+    .company-details,
+    .footer-card{
+        width: calc(50% - 30px);
+    }
+}
+@media screen and (max-width: 600px) {
+    .footer-header p{
+        font-size: 40px;
+    }
+    .company-details,
+    .footer-card{
+        width: 100%;
+    }
+}

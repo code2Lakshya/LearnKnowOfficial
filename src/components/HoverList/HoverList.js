@@ -17,7 +17,7 @@ const HoverList = ({ heading, list, to }) => {
             <ul className={`hover-list ${showList ? 'active' : ''}`}>
                 {
                     list.map((item, index) => <li key={index}>
-                        <HashLink to={`/${to}#${item.replaceAll(' ', '-')}`}>{item}</HashLink>
+                        <HashLink to={`/${to}#${item.replaceAll(' ', '-')}`} smooth>{item}</HashLink>
                     </li>)
                 }
             </ul>

@@ -46,7 +46,8 @@
     color: #ff7425;
     display: inline-flex;
     font-size: 80px;
-   transform: translateY(15px);
+    font-weight: bolder;
+   transform: translate(10px,10px) rotate(-45deg);
 }
 .hero-section-content button{
     background-color: var(--bg-color);
