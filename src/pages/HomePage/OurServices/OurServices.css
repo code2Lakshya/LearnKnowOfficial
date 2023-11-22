@@ -43,6 +43,9 @@
     }
 }
 @media screen and (max-width: 800px) {
+    .our-services-wrapper{
+        margin-top: 30px;
+    }
     .our-services-btn h3{
         font-size: 30px;
     }

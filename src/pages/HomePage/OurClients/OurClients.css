@@ -1,0 +1,69 @@
+.our-clients{
+    width: 100%;
+    padding: 100px 30px;
+}
+.our-clients-wrapper{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.our-clients-wrapper p{
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--txt-color);
+    letter-spacing: 0.14rem;
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 60px;
+}
+.our-clients-wrapper p::before,
+.our-clients-wrapper p::after{
+    content: '';
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    width: calc(50% - 78px);
+    height: 2px;
+    background-color: rgb(24, 24, 24);
+}
+.our-clients-wrapper p::after{
+    left: 0;
+}
+.our-clients-wrapper p::before{
+    right: 0;
+}
+.clients{
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+}
+.client-cards{
+    width: max-content;
+    display: flex;
+    gap:70px;
+    flex-shrink: 0;
+    animation: client 10s linear infinite;
+    padding-right: 70px;
+}
+.client-cards img{
+    width: 150px;
+    height: 65px;
+    flex-shrink: 0;
+    transition: all 0.5s;
+}
+@keyframes client{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+.clients:hover .client-cards{
+    animation-play-state: paused;
+}
+.client-cards img:hover{
+    cursor: pointer;
+    filter: grayscale(1);
+}

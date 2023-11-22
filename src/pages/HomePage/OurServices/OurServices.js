@@ -15,7 +15,7 @@ const OurServices = () => {
     return (
             <ScrollEffect  className="our-services-wrapper" classNameInner="our-services-container">
                 <div className="our-services-btn">
-                    <h3>About Our <span>Services</span></h3>
+                    <h3> Our <span>Services</span></h3>
                     <OurServicesBtn setActiveTab={setActiveTab} heading='video production' activeTab={activeTab} item={0} />
                     <OurServicesBtn setActiveTab={setActiveTab} heading='e-learning' activeTab={activeTab} item={1} />
                     <OurServicesBtn setActiveTab={setActiveTab} heading='design-agency' activeTab={activeTab} item={2} />

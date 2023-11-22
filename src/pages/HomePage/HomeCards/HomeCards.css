@@ -1,6 +1,7 @@
 .home-cards{
     width: 100%;
     padding: 50px 30px;
+    background-color: #121212;
 }
 .home-cards-inner{
     width: 100%;
@@ -14,6 +15,9 @@
     display: flex;
     justify-content: space-between;
     gap: 30px;
+}
+.home-cards-heading .hover-btn{
+    flex-shrink: 0;
 }
 .heading-upper h1{
     font-size: 40px;

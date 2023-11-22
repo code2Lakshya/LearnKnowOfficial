@@ -16,12 +16,12 @@ const HomeCards = () => {
                     <h1>Learn Know Digital</h1>
                     <p>All About Us</p>
                 </div>
-                <HoverButton heading='Contact Us' to='/contact' />
+                <HoverButton heading='Join Us' to='/partner' />
             </div>
             <div className="home-cards-content">
             <HomeCard heading='About Us' src={imgSrc1} to='/about'/>
             <HomeCard heading='Our Services' src={imgSrc2} to='/services' />
-            <HomeCard heading='Contact Us' src={imgSrc3}to='/contact' />
+            <HomeCard heading='Contact Us' src={imgSrc3}to='/partner' />
             </div>
         </ScrollEffect>
     );

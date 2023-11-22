@@ -4,6 +4,7 @@ import { RxCross2 } from 'react-icons/rx';
 import './HomePage.css';
 import OurServices from "./OurServices/OurServices";
 import HomeCards from "./HomeCards/HomeCards";
+import OurClients from "./OurClients/OurClients";
 
 const HomePage = () => {
 
@@ -31,6 +32,7 @@ const HomePage = () => {
             }
             <OurServices />
             <HomeCards />
+            <OurClients />
         </div>
     );
 }
