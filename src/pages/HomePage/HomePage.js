@@ -2,7 +2,6 @@ import { useState } from "react";
 import HeroSection from "./HeroSection/HeroSection";
 import { RxCross2 } from 'react-icons/rx';
 import './HomePage.css';
-import HoverButton from "../../components/HoverButton/HoverButton";
 import OurServices from "./OurServices/OurServices";
 import HomeCards from "./HomeCards/HomeCards";
 

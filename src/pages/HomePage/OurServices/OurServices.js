@@ -6,9 +6,7 @@ import imgSrc3 from '../../../assets//design.jpg';
 import OurServicesContent from "./OurServicesContent/OurServicesContent";
 import './OurServices.css';
 import ScrollEffect from "../../../components/ScrollEffect/ScrollEffect";
-import HoverButton from "../../../components/HoverButton/HoverButton";
 
-const images = [imgSrc1, imgSrc2, imgSrc3];
 
 const OurServices = () => {
 

@@ -6,7 +6,6 @@ import imgSrc2 from '../../../assets/services.png';
 import HomeCard from "./HomeCard/HomeCard";
 import './HomeCards.css';
 
-const imgSrc=[imgSrc1,imgSrc2,imgSrc3];
 
 const HomeCards = () => {
 
