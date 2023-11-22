@@ -1,0 +1,36 @@
+.ourServices-btn{
+    position: relative;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+    border-radius: 80px;
+    overflow: hidden;
+    font-size: 16px;
+    text-transform: uppercase;
+    background-color: rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+    letter-spacing: 0.14rem;
+    font-weight: 500;
+    margin-top: 15px;
+}
+.ourServices-btn.active::before{
+    content: '';
+    position: absolute;
+    top: 46%;
+    left: 30px;
+    width: calc(100% - 60px);
+    height: 2px;
+    background-color: var(--txt-color);
+    animation: cross 0.3s linear 1 forwards;
+    transform-origin: left;
+    transform: scaleX(0);
+}
+@keyframes cross{
+    0%{
+        transform: scaleX(0);
+    }
+    100%{
+        transform: scaleX(1);
+    }
+}

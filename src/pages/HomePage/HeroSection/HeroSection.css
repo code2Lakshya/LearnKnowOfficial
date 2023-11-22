@@ -1,3 +1,8 @@
+.hero-section-container{
+    width: 100%;
+    position: relative;
+
+}
 .hero-section-wrapper{
     width: 100%;
     overflow: hidden;
@@ -49,14 +54,52 @@
     text-transform: uppercase;
     color: white;
     font-weight: 300;
-    width: 130px;
-    height: 130px;
+    width: 110px;
+    height: 110px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    border: 2px solid white;
+    border: 3px solid white;
     cursor: pointer;
+}
+.mouse-container{
+    position: absolute;
+    bottom:0;
+    left: 50%;
+    transform: translate(-30%,80%);
+} 
+.mouse-container p{
+    font-size: 14px;
+    text-transform: uppercase;
+    transform: rotate(90deg) translate(-50%,60%);
+}
+.mouse-container span{
+    font-size: 40px;
+    color: var(--txt-color);
+    width: max-content;
+    position: relative;
+}
+.mouse-container span::before{
+    position: absolute;
+    content:'';
+    width: 5px;
+    height: 5px;
+    background-color: var(--txt-color);
+    border-radius: 50%;
+    left: 44%;
+    animation: mouse 3s linear infinite;
+}
+@keyframes mouse{
+    0%{
+        top:0;
+    }
+    50%{
+        top: 30px;
+    }
+    100%{
+        top:0;
+    }
 }
 @media screen and (max-width: 1000px) {
     .hero-section-content{
@@ -79,6 +122,23 @@
     .hero-section-content button{
         width: 90px;
         height: 90px;
+    }
+    .mouse-container p{
+        transform: rotate(90deg) translate(-50%,70%);
+    }
+    .mouse-container span{
+        font-size: 34px;
+    }
+    @keyframes mouse {
+        0%{
+            top:0;
+        }
+        50%{
+            top: 22px;
+        }
+        100%{
+            top:0;
+        }
     }
 }
 @media screen and (max-width: 500px) {

@@ -1,5 +1,6 @@
 .hover-effect-container{
     width: 100%;
+    overflow: hidden;
 }
 .hover-effect-wrapper{
     visibility: hidden;
@@ -8,4 +9,15 @@
 .hover-effect-wrapper.active{
     visibility: visible;
     opacity: 1;
+    animation: hover 0.5s linear 1 forwards;
+}
+@keyframes hover{
+    0%{
+        opacity: 0;
+        transform: translateY(10%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

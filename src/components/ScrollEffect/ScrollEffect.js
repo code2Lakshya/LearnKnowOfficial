@@ -4,12 +4,13 @@ import './ScrollEffect.css';
 
 const ScrollEffect = ({ children, className, classNameInner }) => {
 
-    const elem = useRef(null);
+    const elem = useRef(0);
     const [showItem, setShowItem] = useState(false);
 
     useEffect(() => {
         const checkScroll = () => {
-            elem?.getBoundingClientRect().top - 70 <= window.innerHeight && setShowItem(true)
+            if(elem)
+            elem.current?.getBoundingClientRect()?.top - 70 <= window.innerHeight && setShowItem(true)
         }
         window.addEventListener('scroll', checkScroll)
         return () => window.removeEventListener('scroll', checkScroll)
