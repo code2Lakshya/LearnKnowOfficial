@@ -6,10 +6,12 @@ import OurServices from "./OurServices/OurServices";
 import HomeCards from "./HomeCards/HomeCards";
 import OurClients from "./OurClients/OurClients";
 import Testimonial from "./Testimonial/Testimonial";
+import useScrollToTop from "../../utils/hooks/useScrollToTop";
 
 const HomePage = () => {
 
     const [showVideo, setShowVideo] = useState(false);
+    useScrollToTop();
 
     return (
         <div className="home-page margin-top">

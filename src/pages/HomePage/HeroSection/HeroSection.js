@@ -11,7 +11,7 @@ const HeroSection = ({ setShowVideo }) => {
                 <div className='hero-section-content'>
                     <h1>
                         Digital and Video Learning
-                        <span><i class="fas fa-arrow-right"></i></span>
+                        <span><i className="fas fa-arrow-right"></i></span>
                     </h1>
                     <button onClick={() => setShowVideo(true)}>Play</button>
                 </div>

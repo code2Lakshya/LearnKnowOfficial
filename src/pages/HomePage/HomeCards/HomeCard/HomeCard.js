@@ -12,7 +12,7 @@ const navigate=useNavigate();
         <div className="home-card" onClick={()=>navigate(to)}>
             <LazyLoadImage src={src} alt='home' effect="blur" />
             <p>{heading} <span><IoIosArrowRoundForward /></span></p>
-            <i class="fas fa-arrow-right"></i>
+            <i className="fas fa-arrow-right"></i>
         </div>
     );
 }

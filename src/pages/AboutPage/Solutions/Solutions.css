@@ -1,0 +1,102 @@
+.solutions{
+    width: 100%;
+    padding: 40px 30px;
+}
+.solutions-wrapper{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.solutions-wrapper > h1{
+    font-size: 42px;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 600;
+    margin-bottom: 35px;
+}
+.solutions-wrapper > h1 span{
+    color: var(--txt-color);
+    font-weight: 800;
+}
+.solutions-header{
+    display: flex;
+    justify-content: center;
+    gap:50px;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.solutions-header .solutions-image{
+    width: 100%;
+    max-width: 450px;
+    flex-shrink: 0;
+}
+.solutions-image .lazy-load-image-background{
+    width: 100%;
+    height: 100%;
+}
+.solutions-cards{
+    width: 40%;
+    display: flex;
+    gap:30px;
+    flex-wrap: wrap;
+}
+.solutions-card{
+    width: calc(50% - 30px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(199, 199, 199,0.3);
+    padding: 30px;
+    border-radius: 30px;
+    user-select: none;
+    height: 140px;
+}
+.solutions-card p{
+    font-size: 35px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+.solutions-card h3{
+    font-size: 15px;
+    color: var(--txt-color);
+    font-weight: 300;
+    text-transform: capitalize;
+    text-align: center;
+}
+.solutions-wrapper > p{
+    font-size: 16px;
+    text-align: justify;
+    text-justify: distribute;
+    margin-bottom: 10px;
+    line-height: 1.4em;
+}
+@media screen and (max-width: 1000px) {
+    .solutions-cards{
+        width: 50%;
+    }
+    .solutions-header .solutions-image{
+        flex-shrink: 1;
+        max-width: 400px;
+    }
+}
+@media screen and (max-width: 850px){
+    .solutions-header{
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+    .solutions-wrapper > h1{
+        font-size: 30px;
+    }
+    .solutions-cards{
+        width: 100%;
+        max-width: 500px;
+    }
+    .solutions-card{
+        width: calc(50% - 15px);
+        height: unset;
+        justify-content: unset;
+    }
+    .solutions-card h3{
+        font-size: 14px;
+    }
+}

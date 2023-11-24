@@ -17,7 +17,7 @@ const navigate=useNavigate();
                         <h3>{heading}</h3>
                         <p>Services</p>
                     </div>
-                    <i class="fas fa-arrow-right"></i>
+                    <i className="fas fa-arrow-right"></i>
                 </div>
             </div>
             <p>

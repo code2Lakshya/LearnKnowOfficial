@@ -39,6 +39,13 @@
 .home-cards-content > *{
     width: calc(32% - 30px);
 }
+.home-cards-inner >p{
+    font-size: 17px;
+    font-weight: lighter;
+    line-height: 26px;
+    text-align: center;
+    margin-top: 10px;
+}
 @media screen and (max-width: 1000px) {
     .home-cards-content{
         flex-direction: column;

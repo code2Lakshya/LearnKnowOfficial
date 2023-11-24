@@ -28,12 +28,12 @@ const Navbar = () => {
                    <Link to='/'><LazyLoadImage src={imgSrc} alt='logo' effect="blur" /></Link>
                 </div>
                 <ul id='nav-list' className={menu? 'active':''}>
-                    <li><Link to='/'>Home</Link></li>
-                    <li><HoverList heading='About' list={['Our Team', 'Our Vision', 'Our Approach', 'Culture And Growth']} to='about' /></li>
-                    <li><HoverList heading='Services' list={['Video Production', 'eLearning', 'Off the Shelve Courses', 'Learning Management System']} to='services' /></li>
-                    <li><Link to='/blog'>Blog</Link></li>
-                    <li><Link to='/careers'>Careers</Link></li>
-                    <li><Link to='/partner'>Partner With Us</Link></li>
+                    <li onClick={()=>setMenu(false)}><Link to='/'>Home</Link></li>
+                    <li onClick={()=>setMenu(false)}><HoverList heading='About' list={['Our Team', 'Our Vision', 'Our Approach', 'Culture And Growth']} to='about-us' /></li>
+                    <li onClick={()=>setMenu(false)}><HoverList heading='Services' list={['Video Production', 'eLearning', 'Off the Shelve Courses', 'Learning Management System']} to='services' /></li>
+                    <li onClick={()=>setMenu(false)}><Link to='/blog'>Blog</Link></li>
+                    <li onClick={()=>setMenu(false)}><Link to='/careers'>Careers</Link></li>
+                    <li onClick={()=>setMenu(false)}><Link to='/partner'>Partner With Us</Link></li>
                     <li onClick={()=> setMenu(false)}><RxCross2 /></li>
                 </ul>
                 <span onClick={()=> setMenu(true)}><CiMenuBurger /></span>

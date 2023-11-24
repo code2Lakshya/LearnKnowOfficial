@@ -110,7 +110,7 @@
 }
 @media  screen and (max-width: 850px) {
     .hero-section-content{
-        height: 75vh;
+        height: 80vh;
         background-size: 90vw 250px;
     }
     .hero-section-content h1{

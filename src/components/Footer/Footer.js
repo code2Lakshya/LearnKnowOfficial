@@ -14,7 +14,7 @@ const Footer = () => {
                 <div className="footer-header">
                     <p>Get In
                         <span>Touch</span>
-                        <span><i class="fas fa-arrow-right"></i></span>
+                        <span><i className="fas fa-arrow-right"></i></span>
                     </p>
                 </div>
                 <div className="footer-content">
@@ -54,7 +54,7 @@ const Footer = () => {
                         <h3>Links</h3>
                         <ul>
                             <li> <Link to='/'>Home</Link> </li>
-                            <li> <Link to='/about-use'>About Us</Link> </li>
+                            <li> <Link to='/about-us'>About Us</Link> </li>
                             <li> <Link to='/services'>Services</Link> </li>
                             <li> <Link to='/blog'>Blog</Link> </li>
                             <li> <Link to='/careers'>Careers</Link> </li>
@@ -63,7 +63,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className="footer-about">
-                    <p>© 2023 All Right Reserved - <span>Learn Know Digital</span> - Lakshya</p>
+                    <p>© 2023 All Right Reserved || <span>Learn Know Digital</span></p>
                 </div>
             </div>
         </footer>

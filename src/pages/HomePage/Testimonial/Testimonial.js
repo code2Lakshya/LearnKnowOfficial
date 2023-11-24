@@ -2,6 +2,7 @@ import ScrollEffect from "../../../components/ScrollEffect/ScrollEffect";
 import { MdArrowForwardIos, MdArrowBackIos } from "react-icons/md";
 import './Testimonial.css';
 import { useState } from "react";
+import toast from "react-hot-toast";
 
 
 const Testimonial = () => {
@@ -14,7 +15,7 @@ const Testimonial = () => {
                 setTransform(prev => prev - 1);
             }
             else {
-                setTransform(3);
+               toast.error('Reached End');
             }
         }
         else {
@@ -22,7 +23,7 @@ const Testimonial = () => {
                 setTransform(prev => prev + 1);
             }
             else {
-                setTransform(0);
+                toast.error('Reached End');
             }
         }
     }

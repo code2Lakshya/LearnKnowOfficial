@@ -9,12 +9,12 @@
 .hover-effect-wrapper.active{
     visibility: visible;
     opacity: 1;
-    animation: hover 0.5s linear 1 forwards;
+    animation: hover 1.5s linear 1 forwards;
 }
 @keyframes hover{
     0%{
         opacity: 0;
-        transform: translateY(10%);
+        transform: translateY(20%);
     }
     100%{
         opacity: 1;

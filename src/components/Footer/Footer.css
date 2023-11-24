@@ -22,6 +22,7 @@ footer{
     text-transform: uppercase;
     letter-spacing: 0.14rem;
     word-spacing: 7px;
+    user-select: none;
 }
 .footer-header p span:nth-child(1){
     padding-inline: 30px;
@@ -116,8 +117,14 @@ footer{
     }
 }
 @media screen and (max-width: 600px) {
+    footer{
+        padding: 50px 30px 0;
+    }
     .footer-header p{
         font-size: 40px;
+    }
+    .footer-header p span:nth-child(1){
+        padding-inline: 10px;
     }
     .company-details,
     .footer-card{

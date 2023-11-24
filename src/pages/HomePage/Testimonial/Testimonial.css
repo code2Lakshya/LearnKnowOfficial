@@ -37,10 +37,10 @@
     cursor: pointer;
 }
 .testimonial-btn span:nth-child(1){
-    left: 0;
+    left: 10px;
 }
 .testimonial-btn span:nth-child(2){
-    right: 0;
+    right: 10px;
 }
 .testimonial-btn span::before{
     content:'';
@@ -66,6 +66,7 @@
     width: 400%;
     display: flex;
     transition: all 1s;
+    user-select: none;
 }
 .testimonial-cards.not-scroll{
     transition: none;
@@ -79,7 +80,8 @@
     font-weight: 400;
     text-align: center;
     line-height: 40px;
-    margin-bottom: 70px;
+    width: 88%;
+    margin: 0 auto 70px;
 }
 .card-footer{
     display: flex;
@@ -96,4 +98,24 @@
 .card-footer p{
     font-size: 12px;
     color: var(--txt-color);
+}
+@media screen and (max-width: 800px) {
+    .testimonial-card > p{
+        font-size: 18px;
+        line-height: 30px;
+        margin: 0 auto 45px;
+    }
+    .card-footer h3{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 500px){
+    .testimonial-btn span{
+        width: 30px;
+        height: 30px;
+    }
+    .testimonial-btn span::before{
+        width: 50%;
+    }
+   
 }
