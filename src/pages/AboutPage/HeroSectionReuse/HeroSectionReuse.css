@@ -35,12 +35,12 @@
     font-size: 150px;
     font-weight: 800;
     text-transform: capitalize;
-    letter-spacing: 0.4rem;
+    letter-spacing: 0.14rem;
 }
 .hero-common-wrapper p{
     max-width: 700px;
     font-size: 20px;
-    line-height: 1.2em;
+    line-height: 1.4em;
     font-weight: 400;
 }
 .hero-common-wrapper p span{

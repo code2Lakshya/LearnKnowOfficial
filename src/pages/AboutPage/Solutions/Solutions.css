@@ -8,11 +8,13 @@
     margin: 0 auto;
 }
 .solutions-wrapper > h1{
-    font-size: 42px;
+    font-size: 50px;
     text-align: center;
     text-transform: capitalize;
     font-weight: 600;
     margin-bottom: 35px;
+    position: sticky;
+    top:10px;
 }
 .solutions-wrapper > h1 span{
     color: var(--txt-color);
@@ -86,6 +88,9 @@
     }
     .solutions-wrapper > h1{
         font-size: 30px;
+    }
+    .solutions-wrapper > p{
+        font-size: 15px;
     }
     .solutions-cards{
         width: 100%;
