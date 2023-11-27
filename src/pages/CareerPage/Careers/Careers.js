@@ -11,35 +11,37 @@ import src5 from '../../../assets/career5.jpeg';
 import src6 from '../../../assets/career6.png';
 
 
-const images=[src1,src2,src3,src4,src5,src6];
+const images = [src1, src2, src3, src4, src5, src6];
 const Careers = () => {
 
     const [activeTab, setActiveTab] = useState(0);
 
     return (
-        <ScrollEffect className='career-container' classNameInner='career-wrapper'>
-            <div className="career-heading">
-                <h1>Careers</h1>
-                <p>
-                    For any career related information, write to us at :
-                    <a href='mailto:hrd@learnknowdigital.com'>hrd@learnknowdigital.com</a>
-                </p>
-            </div>
-            <div className="career-cards">
-                <div className="career-cards-heading">
-                    {
-                        careers.map((item, index) => {
-                            return <OurServicesBtn setActiveTab={setActiveTab} heading={item.heading} activeTab={activeTab} item={index} key={index} />
-                        })}
+        <section id='Careers'>
+            <ScrollEffect className='career-container' classNameInner='career-wrapper'>
+                <div className="career-heading">
+                    <h1>Careers</h1>
+                    <p>
+                        For any career related information, write to us at :
+                        <a href='mailto:hrd@learnknowdigital.com'>hrd@learnknowdigital.com</a>
+                    </p>
                 </div>
-                <div className="career-cards-content">
-                <img src={images[activeTab]} alt={careers[activeTab].heading} />
-                    {
-                        <p>{careers[activeTab].desc}</p>
-                    }
+                <div className="career-cards">
+                    <div className="career-cards-heading">
+                        {
+                            careers.map((item, index) => {
+                                return <OurServicesBtn setActiveTab={setActiveTab} heading={item.heading} activeTab={activeTab} item={index} key={index} />
+                            })}
+                    </div>
+                    <div className="career-cards-content">
+                        <img src={images[activeTab]} alt={careers[activeTab].heading} />
+                        {
+                            <p>{careers[activeTab].desc}</p>
+                        }
+                    </div>
                 </div>
-            </div>
-        </ScrollEffect>
+            </ScrollEffect>
+        </section>
     );
 }
 export default Careers;

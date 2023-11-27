@@ -124,3 +124,30 @@ export const careers=[
         desc:"We encourage innovation and creativity in everything we do. As part of our team, you'll have the freedom to explore new ideas, propose innovative solutions, and contribute to the evolution of our learning offerings. We embrace new technologies, design trends, and instructional strategies."
     }
 ]
+
+export const internship=[
+    {
+        heading:'Professional Development',
+        desc: "As an intern, you'll have the opportunity to enhance your skills and knowledge in areas such as instructional design, eLearning development, video production, graphic design, and multimedia production. You'll work alongside experienced professionals who will guide and mentor you throughout your internship, helping you develop a strong foundation in the industry."
+    },
+    {
+        heading:'Collaborative Work Environment',
+        desc:"At LearnKnow Digital, we foster a collaborative work environment where interns are considered valuable members of the team. You'll have the opportunity to work closely with professionals from different disciplines, contributing your ideas and learning from their expertise. Collaboration and teamwork are essential aspects of our culture, and we encourage active participation and knowledge sharing."
+    },
+    {
+        heading:'Practical Experience',
+        desc:"Our internship program focuses on providing you with practical experience in real-world projects. You'll have the chance to contribute to ongoing projects, work on specific tasks, and collaborate with the team to deliver high-quality learning solutions. This hands-on experience will allow you to apply your theoretical knowledge and gain valuable insights into the industry."
+    },
+    {
+        heading:'Networking and Mentorship',
+        desc:"Our internship program provides an excellent platform for building professional connections and networks. You'll have the chance to connect with professionals in the industry, attend team meetings, and engage in mentorship relationships. Our experienced team members are dedicated to supporting your growth and providing guidance throughout your internship journey."
+    },
+    {
+        heading:'Feedback and Evaluation',
+        desc:"Regular feedback and evaluation are crucial for your development. We provide constructive feedback and guidance to help you identify areas for improvement and build upon your strengths. Our goal is to ensure that you have a meaningful and impactful learning experience during your internship."
+    },
+    {
+        heading:'Potential Career Opportunities',
+        desc:"A successful internship with LearnKnow Digital may open doors to potential career opportunities within the organization. We value talent and are always on the lookout for individuals who demonstrate exceptional skills and a passion for digital learning. Interns who excel during their internship may be considered for future employment opportunities with LearnKnow Digital."
+    }
+]

@@ -2,6 +2,7 @@ import HeroSectionCommon from "../../components/HeroSectionCommon/HeroSectionCom
 import src from '../../assets/bgCareerrr.png';
 import useScrollToTop from "../../utils/hooks/useScrollToTop";
 import Careers from "./Careers/Careers";
+import Internships from "./Internships/Internships";
 
 
 const CareerPage=()=>{
@@ -16,6 +17,7 @@ useScrollToTop();
              src={src}
              />
             <Careers />
+            <Internships />
         </div>
     );
 }

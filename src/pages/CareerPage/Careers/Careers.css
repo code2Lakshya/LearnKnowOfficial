@@ -1,6 +1,10 @@
+#Careers{
+    width: 100%;
+}
 .career-container{
     width: 100%;
-    padding: 91px 30px;
+    padding: 91px 30px 10px;
+    user-select: none;
 }
 .career-wrapper{
     width: 100%;
@@ -20,7 +24,7 @@
     margin-top: 5px;
     font-weight: 400;
     color: var(--txt-color);
-    letter-spacing: 0.14rem;
+    letter-spacing: 0.05rem;
 }
 .career-heading a{
     text-decoration: none;

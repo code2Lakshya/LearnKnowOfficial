@@ -29,10 +29,10 @@ const Navbar = () => {
                 </div>
                 <ul id='nav-list' className={menu? 'active':''}>
                     <li onClick={()=>setMenu(false)}><Link to='/'>Home</Link></li>
-                    <li onClick={()=>setMenu(false)}><HoverList heading='About' list={['Our Team', 'Our Vision', 'Our Approach', 'Culture And Growth']} to='about-us' /></li>
+                    <li onClick={()=>setMenu(false)}><HoverList heading='About' list={['Our Team', 'Our Vision', 'Our Approach']} to='about-us' /></li>
                     <li onClick={()=>setMenu(false)}><Link to='/services'>Services</Link></li>
                     {/* <li onClick={()=>setMenu(false)}><Link to='/blog'>Blog</Link></li> */}
-                    <li onClick={()=>setMenu(false)}><Link to='/careers'>Careers</Link></li>
+                    <li onClick={()=>setMenu(false)}><HoverList heading='Careers' list={['Careers','Internships']} to='careers' /></li>
                     <li onClick={()=>setMenu(false)}><Link to='/partner'>Partner With Us</Link></li>
                     <li onClick={()=> setMenu(false)}><RxCross2 /></li>
                 </ul>

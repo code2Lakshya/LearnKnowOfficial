@@ -1,0 +1,135 @@
+#Internships{
+    width: 100%;
+}
+.internships-container{
+    width: 100%;
+    padding: 91px 30px;
+}
+.internships-wrapper{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.internship-heading{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.internship-heading h1{
+    font-size: 53px;
+    font-weight: 800;
+}
+.whyus-heading{
+    text-align: center;
+}
+.whyus-heading h1{
+    font-size: 50px;
+    font-weight: 800;
+    font-family: 'Playfair Display', serif;
+}
+.whyus-heading p{
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    color: var(--txt-color);
+}
+.whyus-cards{
+    display: flex;
+    color: black;
+    flex-wrap: wrap;
+    user-select: none;
+    justify-content: center;
+    gap:30px;
+}
+.whyus-card{
+    width: 30%;
+    padding: 10px 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    gap:50px;
+    transition: transform 0.5s;
+}
+.whyus-card:hover{
+    transform: translateY(-3px);
+}
+.whyus-card.card0,
+.whyus-card.card5{
+    background-image: url('../../../assets/bg1.jpeg');
+}
+.whyus-card.card1,
+.whyus-card.card3{
+    background-image: url('../../../assets/bg2.jpeg');
+}
+.whyus-card.card2,
+.whyus-card.card4{
+    background-image: url('../../../assets/bg3.jpeg');
+}
+.whyus-card h3{
+    font-weight: 700;
+    font-size: 25px;
+    margin: 0;
+    padding: 15px 0px;
+    border-bottom: 1px solid black;
+}
+.whyus-card p{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.4em;
+}
+.whyus-card button{
+    height: 40px;
+    background-color: var(--txt-color);
+    border: none;
+    font-size: 16px;
+    transition: all 0.5s;
+    cursor: pointer;
+    color: white;
+    border-radius: 20px;
+}
+.whyus-card button:hover{
+    background-color: transparent;
+    border: 1.2px solid black;
+    color: black;
+}
+@media screen and (max-width: 1000px) {
+    .whyus-card{
+        width: calc(50% - 30px);
+    }
+}
+@media screen and (max-width: 800px) {
+    .internship-heading h1{
+        font-size: 30px;
+    }
+    .whyus-heading h1{
+       font-size: 30px;
+    }
+    .whyus-heading p{
+        font-size: 14px;
+    }
+    .whyus-card{
+        gap:30px;
+    }
+        .whyus-card h3{
+            font-size: 20px;
+        }
+        .whyus-card p{
+            font-size: 14px;
+        }
+        .whyus-card button{
+            height: 30px;
+            font-size: 14px;
+        }
+}
+@media screen and (max-width: 600px) {
+    .whyus-card{
+        width: 100%;
+        max-width: 450px;
+    }
+}

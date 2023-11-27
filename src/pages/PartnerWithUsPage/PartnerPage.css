@@ -1,0 +1,14 @@
+.partner-page .hero-common .hero-common-wrapper h1{
+    font-size: 100px;
+    margin-bottom: 10px;
+}
+@media screen and (max-width: 1000px) {
+    .partner-page .hero-common .hero-common-wrapper h1{
+        font-size: 60px;
+    } 
+}
+@media screen and (max-width: 600px) {
+    .partner-page .hero-common .hero-common-wrapper h1{
+        font-size: 40px;
+    } 
+}

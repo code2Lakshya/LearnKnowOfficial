@@ -5,6 +5,7 @@ import {lazy,Suspense} from 'react';
 import HomePage from './pages/HomePage/HomePage';
 import Loader from './components/Loader/Loader';
 import WrongPage from './pages/WrongPage/WrongPage';
+import PartnerPage from './pages/PartnerWithUsPage/PartnerPage';
 
 
 const AboutPage=lazy(()=>import('./pages/AboutPage/AboutPage'));
@@ -21,7 +22,7 @@ function App() {
         <Route path='/services' element={<Suspense fallback={<Loader />}><ServicesPage /></Suspense>} />
         {/* <Route path='/blog' element={<p>Blog Page</p>} /> */}
         <Route path='/careers' element={<Suspense fallback={<Loader />}><CareerPage /></Suspense>} />
-        <Route path='/partner' element={<p>Partner Page</p>} />
+        <Route path='/partner' element={<PartnerPage />} />
         <Route path='*' element={<WrongPage />} />
       </Routes>
       <Footer />
