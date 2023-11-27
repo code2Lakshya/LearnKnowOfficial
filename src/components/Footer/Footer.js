@@ -48,7 +48,7 @@ const Footer = () => {
                     </div>
                     <div className="footer-card contact">
                         <h3>Contact Info</h3>
-                        <a href='mailto:'>info@learnknowdigital.com</a>
+                        <a href='mailto:info@learnknowdigital.com'>info@learnknowdigital.com</a>
                     </div>
                     <div className="footer-card links">
                         <h3>Links</h3>
