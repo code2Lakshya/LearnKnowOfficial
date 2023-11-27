@@ -22,3 +22,21 @@ body{
     margin-top: 61px;
   }
 }
+.btn-stroke .pxl-svg-line {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  -webkit-transform: translate(0,-50%);
+  -khtml-transform: translate(0,-50%);
+  -moz-transform: translate(0,-50%);
+  -ms-transform: translate(0,-50%);
+  -o-transform: translate(0,-50%);
+  transform: translate(0,-50%);
+  width: 100%;
+  margin-top: -2px;
+  height: auto;
+  fill: none;
+  stroke-dashoffset: 0;
+  stroke-dasharray: 3e3;
+}

@@ -63,7 +63,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className="footer-about">
-                    <p>© 2023 All Right Reserved || <span>Learn Know Digital</span></p>
+                    <p>© 2023 All Right Reserved || <span>LearnKnow Digital</span></p>
                 </div>
             </div>
         </footer>

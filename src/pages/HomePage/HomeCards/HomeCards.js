@@ -13,7 +13,7 @@ const HomeCards = () => {
         <ScrollEffect className='home-cards' classNameInner='home-cards-inner'>
             <div className="home-cards-heading">
                 <div className="heading-upper">
-                    <h1>Learn Know Digital</h1>
+                    <h1>LearnKnow Digital</h1>
                     <p>All About Us</p>
                 </div>
                 <HoverButton heading='Join Us' to='/partner' />

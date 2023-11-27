@@ -47,7 +47,13 @@
     color: black;
     padding: 15px 20px;
     border-radius: 19px;
+    border: 1px solid transparent;
     user-select: none;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.approach-card:hover{
+    border: 1px solid var(--txt-color);
 }
 .approach-card span{
     margin: 0 auto;

@@ -8,11 +8,19 @@
     overflow: hidden;
     font-size: 16px;
     text-transform: uppercase;
-    background-color: rgba(255, 255, 255, 0.1);
     cursor: pointer;
     letter-spacing: 0.14rem;
     font-weight: 500;
     margin-top: 15px;
+    transition: background-color 0.3s;
+    align-items: center;
+    gap: 14px;
+}
+.ourServices-btn:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.ourServices-btn.active{
+    background-color: rgba(255, 255, 255, 0.1);
 }
 .ourServices-btn.active::before{
     content: '';
@@ -33,4 +41,9 @@
     100%{
         transform: scaleX(1);
     }
+}
+.ourServices-btn span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

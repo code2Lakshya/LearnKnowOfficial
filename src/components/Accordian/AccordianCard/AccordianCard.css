@@ -1,0 +1,38 @@
+.accordian-card{
+    width: 100%;
+}
+.accordian-card-heading{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-bottom: 1px dotted rgb(249, 243, 243,0.4);
+    background-color: rgb(21, 21, 21);
+    cursor: pointer;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+.accordian-card-heading h3{
+    font-size: 18px;
+   font-weight: 400;
+}
+.accordian-card-content{
+    padding: 30px 20px;
+    background-color: rgb(39, 39, 39);
+    font-size: 17px;
+    font-weight: lighter;
+    line-height: 26px;
+    text-align: justify;
+    text-justify: distribute;
+    color: rgba(234, 233, 233, 0.8);
+}
+@media screen and (max-width: 850px){
+    .accordian-card-heading h3{
+        font-size: 15px;
+       font-weight: 400;
+    }
+    .accordian-card-content{
+        padding: 30px 20px;
+        background-color: rgb(39, 39, 39);
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,117 @@
+#service-details{
+    width: 100%;
+    user-select: none;
+}
+.service-details-container{
+    width: 100%;
+    padding: 90px 30px;
+}
+.service-details-wrapper{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.service-detail-heading {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+    gap: 30px;
+}
+.service-detail-heading h1{
+    font-size: 42px;
+    font-weight: 900;
+}
+.service-detail-heading p{
+    font-size: 14px;
+    margin-top: 10px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: var(--txt-color);
+    letter-spacing: 0.14rem;
+}
+.service-detail-heading .hover-btn{
+    flex-shrink: 0;
+}
+.service-detail-content{
+    display: flex;
+    gap:60px;
+}
+.service-detail-cards{
+    width: 50%;
+    max-width: 500px;
+}
+.current-service{
+    width: 50%;
+}
+.current-service img{
+    width: 100%;
+   aspect-ratio: 1/0.6;
+   border-radius: 30px;
+   margin-bottom: 50px;
+}
+.current-service > p{
+    font-size: 17px;
+    font-weight: lighter;
+    line-height: 26px;
+    text-align: justify;
+    text-justify: distribute;
+    color: rgba(234, 233, 233, 0.8);
+}
+@media screen and (max-width: 1100px) {
+    .service-detail-cards{
+        flex-shrink: 0;
+        max-width: 350px;
+    }
+    .current-service{
+        width: calc(60% - 30px);
+    }
+}
+@media screen and (max-width: 910px) {
+    .service-detail-cards{
+        flex-shrink: 0;
+        max-width: 310px;
+    }
+}
+@media screen and (max-width: 850px) {
+    .service-detail-heading h1{
+        font-size: 34px;
+    }
+    .service-detail-heading p{
+        font-size: 13px;
+    }
+    .service-detail-content{
+        flex-direction: column;
+        align-items: center;
+    }
+    .service-detail-cards{
+      width: 100%;
+      max-width: 650px;
+      flex-shrink: 1;
+    }
+    .service-detail-cards > *{
+        font-size: 15px;
+        padding: 14px 20px;
+    }
+    .service-detail-cards .ourServices-btn.active::before{
+        left: 20px;
+        width: calc(100% - 40px);
+    }
+    .current-service{
+        width: 100%;
+        max-width: 650px;
+    }
+    .current-service img{
+        aspect-ratio: 1/0.55;
+    }
+    .current-service > p{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 520px) {
+    .service-detail-heading {
+        flex-direction: column;
+    }
+    .current-service img{
+        aspect-ratio: 1/0.7;
+    }
+}
