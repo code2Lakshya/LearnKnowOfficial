@@ -1,0 +1,97 @@
+.career-container{
+    width: 100%;
+    padding: 91px 30px;
+}
+.career-wrapper{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.career-heading{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.career-heading h1{
+    font-size: 52px;
+    font-weight: 900;
+}
+.career-heading p{
+    font-size: 14px;
+    margin-top: 5px;
+    font-weight: 400;
+    color: var(--txt-color);
+    letter-spacing: 0.14rem;
+}
+.career-heading a{
+    text-decoration: none;
+    color: inherit;
+    margin-left: 5px;
+    text-transform: lowercase;
+    transition: all 0.3s;
+}
+.career-heading a:hover{
+    text-decoration: underline;
+}
+.career-cards{
+    display: flex;
+    gap:40px;
+}
+.career-cards .career-cards-heading{
+    width: calc(50% - 30px);
+}
+.career-cards .career-cards-content{
+    width: calc(50% - 30px);
+}
+.career-cards-content img{
+    width: 100%;
+    aspect-ratio: 1/0.6;
+    border-radius: 30px;
+    margin-bottom: 30px;
+}
+.career-cards-content p{
+    font-size: 17px;
+    font-weight: lighter;
+    line-height: 26px;
+    text-align: justify;
+    text-justify: distribute;
+    color: rgba(234, 233, 233, 0.8);
+}
+@media screen and (max-width: 1000px){
+    .career-cards-content img{
+        aspect-ratio: 1/0.8;
+    }
+}
+@media screen and (max-width: 850px){
+    .career-heading h1{
+        font-size: 35px;
+    }
+    .career-heading p{
+        font-size: 14px;
+    }
+    .career-cards{
+        flex-direction: column;
+        align-items: center;
+    }
+    .career-cards .career-cards-heading{
+        width: 100%;
+        max-width: 550px;
+    }
+    .career-cards-heading > *{
+        padding: 14px 20px;
+        font-size: 15px;
+    }
+    .career-cards-heading .ourServices-btn.active::before{
+        left: 20px;
+        width: calc(100% - 40px);
+    }
+    .career-cards .career-cards-content{
+        width: 100%;
+        max-width: 550px;
+    }
+    .career-cards-content img{
+        aspect-ratio: 1/0.55;
+    }
+    .career-cards-content p{
+        font-size: 14px;
+    }
+}

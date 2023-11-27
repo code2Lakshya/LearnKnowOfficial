@@ -1,8 +1,8 @@
+import HeroSectionCommon from "../../components/HeroSectionCommon/HeroSectionCommon";
 import useScrollToTop from "../../utils/hooks/useScrollToTop";
-import HeroServices from "./HeroServices/HeroServices";
 import ServiceCards from "./ServicesCards/ServicesCards";
 import ServicesDetails from "./ServicesDetails/ServicesDetails";
-
+import bgSrc from '../../assets/bgServices.jpeg';
 
 
 const ServicesPage=()=>{
@@ -11,7 +11,7 @@ useScrollToTop();
 
     return(
         <div className="services-page">
-        <HeroServices />
+        <HeroSectionCommon heading='Services' description='  We create cutting-edge learning' src={bgSrc} />
         <ServiceCards />
         <ServicesDetails />
         </div>

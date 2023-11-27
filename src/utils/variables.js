@@ -97,3 +97,30 @@ export const servicesInDetail = [
         ]
     }
 ]
+
+export const careers=[
+    {
+        heading:'Diverse and Challenging Projects',
+        desc:"At LearnKnow Digital, you'll have the chance to work on diverse and challenging projects that span across industries and domains. From developing custom eLearning courses to creating engaging videos and interactive simulations, you'll be exposed to a wide range of projects that will enhance your skills and expertise."
+    },
+    {
+        heading:'Mentorship and Growth Opportunities',
+        desc:"At LearnKnow Digital, we value the growth and development of our employees. We provide mentorship and coaching opportunities to help you navigate your career path. Our experienced leaders and senior team members are dedicated to supporting your professional growth, providing guidance, feedback, and opportunities for advancement within the organization."
+    },
+    {
+        heading:'Continuous Learning and Development',
+        desc:"We believe in the power of continuous learning and professional development. You'll have access to a wealth of resources, training programs, and opportunities to enhance your knowledge and skills in areas such as instructional design, multimedia production, video editing, and emerging technologies"
+    },
+    {
+        heading:'Work-Life Balance',
+        desc:"We understand the importance of maintaining a healthy work-life balance. We strive to provide a flexible work environment that supports your personal commitments and well-being. We value the happiness and satisfaction of our employees, that it contributes to their productivity and overall success."
+    },
+    {
+        heading:'Collaboration and Teamwork',
+        desc:"Collaboration is at the heart of our work culture. You'll have the opportunity to collaborate with talented and passionate professionals, including instructional designers, multimedia specialists, graphic designers, video producers, and content developers."
+    },
+    {
+        heading:'Innovation and Creativity',
+        desc:"We encourage innovation and creativity in everything we do. As part of our team, you'll have the freedom to explore new ideas, propose innovative solutions, and contribute to the evolution of our learning offerings. We embrace new technologies, design trends, and instructional strategies."
+    }
+]
