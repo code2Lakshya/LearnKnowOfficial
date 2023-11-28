@@ -16,8 +16,8 @@ const PartnerPage = () => {
             <HeroSectionCommon
                 heading='Partner With Us'
                 src={src}
-                to='/about-us'
-                btnName='About Us'
+                to='/partner/#contact-us'
+                btnName='Contact Us'
             />
             <LocateUs />
             <ContactUs />

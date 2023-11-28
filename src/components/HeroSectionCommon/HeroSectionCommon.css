@@ -58,7 +58,8 @@
     object-fit: fill;
     z-index: 0;
 }
-.hero-common-wrapper button{
+.hero-common-wrapper button,
+.hero-common-wrapper a{
     width: max-content;
     padding: 12px 20px;
     font-size: 16px;
@@ -69,8 +70,10 @@
     border: 2px solid white;
     cursor: pointer;
     transition: all 0.5s;
+    text-decoration: none;
 }
-.hero-common-wrapper button:hover{
+.hero-common-wrapper button:hover,
+.hero-common-wrapper a:hover{
     color: var(--txt-color);
     border: 2px solid var(--txt-color);
 }

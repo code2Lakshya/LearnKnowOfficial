@@ -19,6 +19,7 @@ const ContactUs = () => {
     }
 
     return (
+        <section id='contact-us'>
         <ScrollEffect className='contact-container' classNameInner='contact-wrapper'>
             <div className="contact-details">
                 <h1>Contact Us</h1>
@@ -58,6 +59,7 @@ const ContactUs = () => {
                 <textarea
                     rows='10'
                     cols='10'
+                    name="message"
                     value={userInput.message}
                     onChange={changeHandler}
                     placeholder="Your Message"
@@ -66,6 +68,7 @@ const ContactUs = () => {
                 <button type='submit'>Send Message</button>
             </form>
         </ScrollEffect>
+        </section>
     );
 }
 export default ContactUs;
