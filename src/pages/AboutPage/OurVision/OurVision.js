@@ -20,7 +20,7 @@ const navigate=useNavigate();
                         vision.map((item, index) => <div className={`whyus-card card${index}`} key={index}>
                             <h3>{item.heading}</h3>
                             <p>{item.desc}</p>
-                            <button onClick={()=> navigate('/blogs')}>Know More</button>
+                            <button onClick={()=> navigate('/partner')}>Contact Us</button>
                         </div>)
                     }
                 </div>

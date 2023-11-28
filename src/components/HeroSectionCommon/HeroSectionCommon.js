@@ -3,24 +3,28 @@ import { useNavigate } from "react-router-dom";
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import './HeroSectionCommon.css';
 
-const HeroSectionCommon=({heading,description,src})=>{
+const HeroSectionCommon = ({ heading, description, src, to, btnName }) => {
 
-const navigate=useNavigate();
+    const navigate = useNavigate();
 
-    return(
+    return (
         <div className="hero-common ">
-        <div className="hero-common-wrapper ">
-            <h1>{heading}</h1>
-            <p>
-                {description}
-            </p>
-            <p>
-            <span>LearnKnow Digital </span>- Your Solution Partner for Digital & Video-Based Learning!
-            </p>
-            <button onClick={() => navigate('/partner')}>Contact Us</button>
+            <div className="hero-common-wrapper ">
+                <h1>{heading}</h1>
+                <p>
+                    {description}
+                </p>
+                <p>
+                    <span>LearnKnow Digital </span>- Your Solution Partner for Digital & Video-Based Learning!
+                </p>
+                <button
+                    onClick={() => navigate(to ? to : '/partner')}
+                >
+                    {btnName ? btnName : 'Contact Us'}
+                </button>
+            </div>
+            <LazyLoadImage src={src} alt={heading} effect="blur" />
         </div>
-        <LazyLoadImage src={src} alt={heading} effect="blur" />
-    </div>
     );
 }
 export default HeroSectionCommon;

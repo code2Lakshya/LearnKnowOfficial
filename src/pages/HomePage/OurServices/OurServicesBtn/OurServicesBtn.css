@@ -36,3 +36,9 @@
     align-items: center;
     justify-content: center;
 }
+@media screen and (max-width: 850px) {
+    .ourServices-btn{
+        font-size: 14px;
+        padding: 14px 20px;
+    }
+}

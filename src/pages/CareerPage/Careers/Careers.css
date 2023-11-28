@@ -80,10 +80,6 @@
         width: 100%;
         max-width: 550px;
     }
-    .career-cards-heading > *{
-        padding: 14px 20px;
-        font-size: 15px;
-    }
     .career-cards-heading .ourServices-btn.active::before{
         left: 20px;
         width: calc(100% - 40px);

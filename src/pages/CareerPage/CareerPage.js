@@ -5,17 +5,17 @@ import Careers from "./Careers/Careers";
 import Internships from "./Internships/Internships";
 
 
-const CareerPage=()=>{
+const CareerPage = () => {
 
-useScrollToTop();
+    useScrollToTop();
 
-    return(
+    return (
         <div className="career-page">
-            <HeroSectionCommon 
-            heading='Careers' 
-            description='A career at Learknow Digital offers exciting opportunities for growth, learning, and professional development.'
-             src={src}
-             />
+            <HeroSectionCommon
+                heading='Careers'
+                description='A career at Learknow Digital offers exciting opportunities for growth, learning, and professional development.'
+                src={src}
+            />
             <Careers />
             <Internships />
         </div>

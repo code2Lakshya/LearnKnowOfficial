@@ -2,14 +2,26 @@ import HeroSectionCommon from "../../components/HeroSectionCommon/HeroSectionCom
 import src from '../../assets/bgPartnerr.png';
 import './PartnerPage.css';
 import useScrollToTop from "../../utils/hooks/useScrollToTop";
+import LocateUs from "./LocatesUs/LocateUs";
+import ContactUs from "./ContactUs/ContactUs";
+import OurClients from '../../pages/HomePage/OurClients/OurClients';
 
-const PartnerPage=()=>{
 
-useScrollToTop();
+const PartnerPage = () => {
 
-    return(
+    useScrollToTop();
+
+    return (
         <div className="partner-page">
-            <HeroSectionCommon heading='Partner With Us'  src={src} />
+            <HeroSectionCommon
+                heading='Partner With Us'
+                src={src}
+                to='/about-us'
+                btnName='About Us'
+            />
+            <LocateUs />
+            <ContactUs />
+            <OurClients />
         </div>
     );
 }

@@ -151,3 +151,22 @@ export const internship=[
         desc:"A successful internship with LearnKnow Digital may open doors to potential career opportunities within the organization. We value talent and are always on the lookout for individuals who demonstrate exceptional skills and a passion for digital learning. Interns who excel during their internship may be considered for future employment opportunities with LearnKnow Digital."
     }
 ]
+
+export const location=[
+    {
+        heading:'Corporate HQ',
+        desc:'Technopolis Sec V Salt Lake Kolkata West Bengal.'
+    },
+    {
+        heading:'US office',
+        desc:'56, W 65th Street, Brooklyn NY 10023, New York USA'
+    },
+    {
+        heading:'Dubai',
+        desc:"The Iridium Building, Umm Sequim Road, Al Barsha, PO Box: 391186, Dubai UAE"
+    }, 
+    {
+        heading:'Bahrain',
+        desc:'Levels 22, West Tower Bahrain Financial Harbour, King Faisal Highway, Manama, Bahrain.'
+    }
+]

@@ -88,10 +88,6 @@
       max-width: 650px;
       flex-shrink: 1;
     }
-    .service-detail-cards > *{
-        font-size: 15px;
-        padding: 14px 20px;
-    }
     .service-detail-cards .ourServices-btn.active::before{
         left: 20px;
         width: calc(100% - 40px);

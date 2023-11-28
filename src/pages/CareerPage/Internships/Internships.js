@@ -21,7 +21,7 @@ const navigate=useNavigate();
                         internship.map((item, index) => <div className={`whyus-card card${index}`} key={index}>
                             <h3>{item.heading}</h3>
                             <p>{item.desc}</p>
-                            <button onClick={()=> navigate('/blogs')}>Contact Us</button>
+                            <button onClick={()=> navigate('/partner')}>Contact Us</button>
                         </div>)
                     }
                 </div>
