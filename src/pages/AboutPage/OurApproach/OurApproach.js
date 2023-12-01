@@ -16,7 +16,7 @@ const OurApproach = () => {
                             to your unique requirements.
                         </p>
                     </div>
-                    <HoverButton heading='See All Blogs' to='/blog' />
+                    <HoverButton heading='Join Us' to='/career' />
                 </div>
                 <div className="approach-cards">
                     <div className="approach-card">

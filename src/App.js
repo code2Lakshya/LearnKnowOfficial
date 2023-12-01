@@ -6,6 +6,7 @@ import HomePage from './pages/HomePage/HomePage';
 import Loader from './components/Loader/Loader';
 import WrongPage from './pages/WrongPage/WrongPage';
 import PartnerPage from './pages/PartnerWithUsPage/PartnerPage';
+import Chatbot from './components/Chatbot/Chatbot';
 
 
 const AboutPage=lazy(()=>import('./pages/AboutPage/AboutPage'));
@@ -26,6 +27,7 @@ function App() {
         <Route path='*' element={<WrongPage />} />
       </Routes>
       <Footer />
+      <Chatbot />
     </div>
   );
 }

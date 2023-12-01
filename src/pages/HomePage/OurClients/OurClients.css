@@ -47,8 +47,8 @@
     padding-right: 70px;
 }
 .client-cards img{
-    width: 150px;
-    height: 65px;
+    width: 110px;
+    height: 74px;
     flex-shrink: 0;
     transition: all 0.5s;
 }
@@ -66,4 +66,10 @@
 .client-cards img:hover{
     cursor: pointer;
     filter: grayscale(1);
+}
+@media screen and (max-width: 850px){
+    .client-cards img{
+        width: 83px;
+        height: 55px;
+    }
 }
