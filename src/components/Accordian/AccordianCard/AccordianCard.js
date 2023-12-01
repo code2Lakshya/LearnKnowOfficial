@@ -9,7 +9,7 @@ const AccordianCard = ({ content, current, setCurrent, index }) => {
         <div className="accordian-card">
             <div className="accordian-card-heading" onClick={() => setCurrent(prev => prev === index ? null : index)}>
                 <h3>{content.heading}</h3>
-                <span>
+                <span data-testid='accordian-btn'>
                     {current === index ? <IoMdArrowDropup /> : <IoMdArrowDropdown />}
                 </span>
             </div>

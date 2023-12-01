@@ -35,7 +35,7 @@ const Chatbot = () => {
     if (!showChatbot)
         return (
             <div className="chatbot">
-                <div className="chatbot-icon" onClick={() => setShowChatbot(true)}><GoHubot /></div>
+                <div className="chatbot-icon" onClick={() => setShowChatbot(true)} data-testid='open-bot'><GoHubot /></div>
                 {
                     showMessage &&
                     <div className="chatbot-greet">
@@ -166,7 +166,7 @@ const Chatbot = () => {
                         :
                         <div className="demo-input"></div>
                 }
-                <button onClick={clickHandler}><IoMdSend /></button>
+                <button onClick={clickHandler} data-testid='sendBtn'><IoMdSend /></button>
             </div>
         </div >
     );
