@@ -211,6 +211,6 @@ export const questionList = [
     {
         question: 'Please Enter Your Phone Number',
         inputType: 'number',
-        name: 'number'
+        name: 'phone'
     }
 ];

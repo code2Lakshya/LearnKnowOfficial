@@ -18,17 +18,16 @@ const Chatbot = () => {
     const [currentQ, setCurrentQ] = useState(0);
     const [currentInput, setCurrentInput] = useState('');
     const elem = useRef(null);
-    const navigate=useNavigate();
+    const navigate = useNavigate();
 
     useEffect(() => {
-        if(elem )
-        {
-        elem?.current?.scroll(0, elem?.current?.offsetHeight);
-        setTimeout(()=>elem?.current?.scroll(0, elem?.current?.offsetHeight),1010);
+        if (elem) {
+            elem?.current?.scroll(0, elem?.current?.offsetHeight);
+            setTimeout(() => elem?.current?.scroll(0, elem?.current?.offsetHeight), 1010);
         }
     }, [currentQ])
 
-    const issueClickHandler=()=>{
+    const issueClickHandler = () => {
         closeHandler();
         navigate('/partner');
     }
@@ -51,8 +50,8 @@ const Chatbot = () => {
         return (
             <div className="chatbot-retry">
                 <div className="chatbot-btn">
-                <span onClick={resetHandler}><GrPowerReset /></span>
-                <span onClick={closeHandler}><IoCloseSharp /></span>
+                    <span onClick={resetHandler}><GrPowerReset /></span>
+                    <span onClick={closeHandler}><IoCloseSharp /></span>
                 </div>
                 <div className="chatbot-message">
                     <p>Nice chatting with you!!</p>
@@ -65,32 +64,49 @@ const Chatbot = () => {
     const { question, options, inputType, name, multiInput } = questionList[currentQ];
 
     const changeHandler = (e) => {
-       if(multiInput){
-        setUserInput(prev => [...prev, { name, answer: e.target.value }]);
-        setCurrentInput('');
-        setCurrentQ(currentQ + 1);
-       }
-        else{
+        if (multiInput) {
+            setUserInput(prev => [...prev, { name, answer: e.target.value }]);
+            setCurrentInput('');
+            setCurrentQ(currentQ + 1);
+        }
+        else {
             setCurrentInput(e.target.value);
         }
     }
     const clickHandler = (e) => {
         if (currentInput) {
             setUserInput(prev => [...prev, { name, answer: currentInput }]);
-            setCurrentInput('');
             setCurrentQ(currentQ + 1);
-            //api call
+            if (currentQ + 1 === questionList.length) {
+                let obj={};
+                for(const item of userInput){
+                    const name=item?.name;
+                    obj[name]=item?.answer;
+                }
+                obj[name]=currentInput;
+                fetch(process.env.REACT_APP_CHATBOT_FORM_URL, {
+                    method: 'POST',
+                    headers: {
+                        'Accept': 'application/json'
+                    },
+                    body: JSON.stringify(obj)
+                })
+                .then(()=>console.log('Sent'))
+                .catch((error)=>console.log(error))
+                setCurrentInput('');
+            }
+            setCurrentInput('');
         }
         else {
             toast.error('Input Is required');
         }
     }
-    function resetHandler(){
+    function resetHandler() {
         setCurrentQ(0);
         setCurrentInput('');
         setUserInput([]);
     }
-    function closeHandler(e){
+    function closeHandler(e) {
         setShowChatbot(false);
         resetHandler();
     }

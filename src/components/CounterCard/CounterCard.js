@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 
 
-
 const CounterCard=({max,heading,className})=>{
 
 const [counter,setCounter]=useState(0);
