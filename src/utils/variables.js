@@ -162,10 +162,6 @@ export const internship = [
 
 export const location = [
     {
-        heading: 'Corporate HQ',
-        desc: 'DH Block(Newtown), Action Area I, Newtown, New Town, Chakpachuria, West Bengal 700156'
-    },
-    {
         heading: 'US office',
         desc: '56, W 65th Street, Brooklyn NY 10023, New York USA'
     },

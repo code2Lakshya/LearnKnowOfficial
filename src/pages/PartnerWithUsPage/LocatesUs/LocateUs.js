@@ -1,14 +1,13 @@
 import { useState } from "react";
 import ScrollEffect from "../../../components/ScrollEffect/ScrollEffect";
-import src1 from '../../../assets/locate1.png';
-import src2 from '../../../assets/locate2.png';
-import src3 from '../../../assets/locate3.png';
-import src4 from '../../../assets/locate4.png';
+import src1 from '../../../assets/locate2.png';
+import src2 from '../../../assets/locate3.png';
+import src3 from '../../../assets/locate4.png';
 import OurServicesBtn from "../../HomePage/OurServices/OurServicesBtn/OurServicesBtn";
 import { location } from "../../../utils/variables";
 import './LocateUs.css';
 
-const images = [src1, src2, src3, src4];
+const images = [ src1, src2, src3];
 
 const LocateUs = () => {
 
