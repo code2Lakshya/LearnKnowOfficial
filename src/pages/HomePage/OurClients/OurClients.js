@@ -23,8 +23,8 @@ const OurClients = () => {
                     <img src={client7} alt='brand' style={{ backgroundColor: 'white' }} />
                     <img src={client5} alt='brand' />
                     */}
+                    <img src={client8} alt='brand' style={{ backgroundColor: 'white' }} />
                     <img src={client6} alt='brand' />
-                    <img src={client8} alt='brand' />
                 </div>
                 <div className='client-cards'>
                     <img src={client1} alt='brand' style={{ backgroundColor: 'white' }} />
@@ -34,8 +34,8 @@ const OurClients = () => {
                     <img src={client7} alt='brand' style={{ backgroundColor: 'white' }} />
                     <img src={client5} alt='brand' />
                     */}
+                    <img src={client8} alt='brand' style={{ backgroundColor: 'white' }} />
                     <img src={client6} alt='brand' /> 
-                    <img src={client8} alt='brand' />
                 </div>
             </div>
         </ScrollEffect>

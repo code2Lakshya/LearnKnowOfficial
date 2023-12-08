@@ -4,7 +4,7 @@
 }
 .our-clients-wrapper{
     width: 100%;
-    max-width: 700px;
+    max-width: 820px;
     margin: 0 auto;
 }
 .our-clients-wrapper p{
@@ -41,10 +41,10 @@
 .client-cards{
     width: max-content;
     display: flex;
-    gap:70px;
+    gap:100px;
     flex-shrink: 0;
     animation: client 10s linear infinite;
-    padding-right: 70px;
+    padding-right: 100px;
 }
 .client-cards img{
     width: 110px;
