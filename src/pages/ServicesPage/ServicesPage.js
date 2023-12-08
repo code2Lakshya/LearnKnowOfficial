@@ -2,7 +2,7 @@ import HeroSectionCommon from "../../components/HeroSectionCommon/HeroSectionCom
 import useScrollToTop from "../../utils/hooks/useScrollToTop";
 import ServiceCards from "./ServicesCards/ServicesCards";
 import ServicesDetails from "./ServicesDetails/ServicesDetails";
-import bgSrc from '../../assets/bgServices.jpeg';
+import bgSrc from '../../assets/bgServices.mp4';
 
 
 const ServicesPage=()=>{

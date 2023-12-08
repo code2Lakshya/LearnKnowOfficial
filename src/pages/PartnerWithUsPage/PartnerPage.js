@@ -1,5 +1,5 @@
 import HeroSectionCommon from "../../components/HeroSectionCommon/HeroSectionCommon";
-import src from '../../assets/bgPartnerr.png';
+import src from '../../assets/bgPartnerr.mp4';
 import './PartnerPage.css';
 import useScrollToTop from "../../utils/hooks/useScrollToTop";
 import LocateUs from "./LocatesUs/LocateUs";

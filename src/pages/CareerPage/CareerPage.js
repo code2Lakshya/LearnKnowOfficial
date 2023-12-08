@@ -1,5 +1,5 @@
 import HeroSectionCommon from "../../components/HeroSectionCommon/HeroSectionCommon";
-import src from '../../assets/bgCareerrr.png';
+import src from '../../assets/bgCareerrr.mp4';
 import useScrollToTop from "../../utils/hooks/useScrollToTop";
 import Careers from "./Careers/Careers";
 import Internships from "./Internships/Internships";

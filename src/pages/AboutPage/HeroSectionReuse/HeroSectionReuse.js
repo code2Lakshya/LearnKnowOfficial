@@ -1,6 +1,4 @@
-import { LazyLoadImage } from "react-lazy-load-image-component";
-import 'react-lazy-load-image-component/src/effects/blur.css';
-import heroImage from '../../../assets/aboutHero.jpeg';
+import heroImage from '../../../assets/aboutHero.mp4';
 import './HeroSectionReuse.css';
 import { useNavigate } from "react-router-dom";
 
@@ -21,7 +19,7 @@ const navigate=useNavigate();
                 </p>
                 <button onClick={()=>navigate('/partner')}>Contact Us</button>
             </div>
-            <LazyLoadImage src={heroImage} alt='About' effect="blur" />
+            <video src={heroImage} alt='About' autoPlay loop />
         </div>
     );
 }

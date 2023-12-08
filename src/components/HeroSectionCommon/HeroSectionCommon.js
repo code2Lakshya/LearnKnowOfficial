@@ -1,6 +1,4 @@
-import { LazyLoadImage } from "react-lazy-load-image-component";
 import { useNavigate } from "react-router-dom";
-import 'react-lazy-load-image-component/src/effects/blur.css';
 import './HeroSectionCommon.css';
 import { HashLink } from "react-router-hash-link";
 
@@ -29,7 +27,7 @@ const HeroSectionCommon = ({ heading, description, src, to, btnName }) => {
                     <HashLink to={to} smooth>{btnName}</HashLink>
                 }
             </div>
-            <LazyLoadImage src={src} alt={heading} effect="blur" />
+            <video src={src} alt='video' autoPlay loop />
         </div>
     );
 }
